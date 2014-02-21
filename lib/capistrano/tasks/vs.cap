@@ -1,5 +1,5 @@
 set :vs_app_name, 'two-hearts-new'
-set :vs_repo_url, 'git@voroninstudio.eu:VoroninNick/two-hearts-new.git'
+set :vs_repo_url, 'git@github.com:VoroninNick/two-hearts-new.git'
 set :vs_deploy_to, '/home/applications/www/two-hearts-new'
 
 # will be featured in future
@@ -16,18 +16,19 @@ namespace :vs do
     invoke 'vs:restart'
   end
 
-  desc 'restart'
-  task :restart do
-    on roles :app do
-      execute "/bin/nginx-200-restart"
-    end
-  end
-
   desc 'deploy'
   task :deploy do
     invoke 'vs:git_pull'
     invoke 'vs:bundle_install'
     invoke 'vs:rake_db_migrate'
+    invoke 'vs:restart'
+  end
+
+  desc 'restart'
+  task :restart do
+    on roles :app do
+      execute "/bin/nginx-200-restart"
+    end
   end
 
   desc 'git clone'

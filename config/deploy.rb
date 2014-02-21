@@ -2,7 +2,7 @@
 lock '3.1.0'
 
 set :application, 'two-hearts-new'
-set :repo_url, 'git@voroninstudio.eu:VoroninNick/two-hearts-new.git'
+set :repo_url, 'git@github.com:VoroninNick/two-hearts-new.git'
 
 # Default branch is :master
 # ask :branch, proc { `git rev-parse --abbrev-ref HEAD`.chomp }
