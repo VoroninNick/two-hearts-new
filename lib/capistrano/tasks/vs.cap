@@ -67,4 +67,10 @@ namespace :vs do
     end
   end
 
+  desc 'rake db:rollback'
+  task :db_rollback do
+    on roles :app do
+      execute "#{fetch :vs_rvm_path} && cd #{fetch :vs_deploy_to} && rake db:rollback"
+    end
+  end
 end
