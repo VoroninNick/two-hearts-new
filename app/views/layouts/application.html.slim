@@ -12,6 +12,11 @@ html lang="en"
 
 body
 
-  == yield
+  = render :partial => "partials/header"
+  = render :partial => "partials/menu"
+
+  = yield
+
+  = render :partial => "partials/footer"
 
   = javascript_include_tag "application"

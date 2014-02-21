@@ -1,0 +1,21 @@
+nav class="top-bar" data-topbar=""
+  ul.title-area
+    li.name
+      h1
+        =link_to "Головна", root_path
+    li.toggle-topbar.menu-icon
+      a href="#"
+        |Menu
+
+  section.top-bar-section
+    ul.right
+      li
+        =link_to "Агенція", 'about', class: is_active?('about')
+      li
+        =link_to "Наші роботи", '#', class: is_active?('about')
+      li
+        =link_to "Відгуки", '#', class: is_active?('about')
+      li
+        =link_to "Послуги", '#', class: is_active?('about')
+      li
+        =link_to "Контакти", '#', class: is_active?('about')

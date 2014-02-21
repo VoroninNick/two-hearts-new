@@ -1,4 +1,5 @@
 TwoHeartsNew::Application.routes.draw do
+  get "about/index"
   mount Ckeditor::Engine => '/ckeditor'
   mount RailsAdmin::Engine => '/admin', :as => 'rails_admin'
   devise_for :users
@@ -56,4 +57,8 @@ TwoHeartsNew::Application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
+
+  get '*a', to: 'home#index'
+
+  root to: 'home#index'
 end
