@@ -10,13 +10,19 @@ html lang="en"
   = javascript_include_tag "vendor/modernizr"
   = csrf_meta_tag
 
+  /[if !IE 7]
+  	| <style type="text/css">.page-content {display:table;height:100%}</style>
+  /[endif]
+
 body
 
-  = render :partial => "partials/header"
-  = render :partial => "partials/menu"
+  #content-wrapper
+    = render :partial => "partials/header"
+    = render :partial => "partials/menu"
+    = yield
 
-  = yield
 
-  = render :partial => "partials/footer"
+
+  = render partial: "partials/footer"
 
   = javascript_include_tag "application"
