@@ -1,32 +1,76 @@
 #footer
   .row
-    #back-to-top
+    .relative
+      #back-to-top
 
-    .columns.large-4
-      h3.heart-title
-        = image_tag('small-heart.png')
-        |Два серця
-      p
-        |— це активно розвинута агенція, яка успішно займається підготовкою та організацією різноманітних свят, заходів, вечірок, ювілеїв та інших урочистих подій.
-    .columns.large-4
-      h3.heart-title
-        = image_tag('small-heart.png')
-        |Соціальні мережі
-      = link_to('vk', '#', class: 'social-link')
-      = link_to('f', '#', class: 'social-link')
-      = link_to('f', '#', class: 'social-link')
-      = link_to('t', '#', class: 'social-link')
+      .columns.large-4
+        h3.heart-title
+          = image_tag('small-heart.png')
+          |Два серця
+        p
+          |— це активно розвинута агенція, яка успішно займається підготовкою та організацією різноманітних свят, заходів, вечірок, ювілеїв та інших урочистих подій.
+      .columns.large-4
+        h3.heart-title
+          = image_tag('small-heart.png')
+          |Соціальні мережі
+        = link_to('vk', '#', class: 'social-link')
+        = link_to('f', '#', class: 'social-link')
+        = link_to('f', '#', class: 'social-link')
+        = link_to('t', '#', class: 'social-link')
 
-    #footer-contact.columns.large-4
-      h3.heart-title
-        = image_tag('small-heart.png')
-        |Контакти
-      p
-        span#address
-          |м. Львів, вул. Січових Стрільців, 8
+      #footer-contact.columns.large-4
+        h3.heart-title
+          = image_tag('small-heart.png')
+          |Контакти
+        p
+          span#address
+            |м. Львів, вул. Січових Стрільців, 8
 
-        = link_to( '+38 (067) 672 68 30', 'tel:+38 (067) 672 68 30', id: 'phone' )
+          = link_to( '+38 (067) 672 68 30', 'tel:+38 (067) 672 68 30', id: 'phone' )
 
-        = link_to('info@wed.in.ua', 'mailto:info@wed.in.ua', id: 'email')
+          = link_to('info@wed.in.ua', 'mailto:info@wed.in.ua', id: 'email')
 
-        = link_to( 'детальніше', '#', id: 'contact-link' )
+          = link_to( 'детальніше', '#', id: 'contact-link' )
+
+
+  #footer-separator
+    .row
+      .flower-left.columns.large-1
+        = image_tag('flower-left.png')
+
+      .separator-line.columns.large-10
+
+
+      .flower-right.columns.large-1
+        = image_tag( 'flower-right.png', class: 'right' )
+
+
+  #last-footer
+    .row
+      #copyright.columns.large-4
+        p
+          |&copy;&nbsp;2008 — 2014 івент агенція «Два серця»
+
+      #developed.columns.large-4
+        .image-link
+          = link_to( image_tag('vs-logo.svg'), 'http://www.voroninstudio.eu' )
+
+        p
+          |Зроблено в
+          |&nbsp;
+          = link_to( 'дизайн студії Миколи Вороніна', '#' )
+          |&nbsp;
+          = link_to( 'Інформація про сайт', '#', id: 'vs-site-info' )
+
+      #footer-menu.columns.large-4
+        dl.sub-nav
+          dd.active
+            = link_to 'Агенція', '#'
+          dd
+            = link_to('наші роботи', '#')
+          dd
+            = link_to( "Відгуки", '#' )
+          dd
+            = link_to("Послуги", '#')
+          dd
+            = link_to("Контакти", '#')

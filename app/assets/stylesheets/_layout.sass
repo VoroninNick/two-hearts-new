@@ -130,15 +130,62 @@ body:before
 
 
 
-#back-to-top
-  background: url("back_top.png") no-repeat transparent
-  width: 61px
-  height: 70px
-  position: relative
-  line-height: 70px
-  vertical-align: text-top
-  display: inline-block
-  float: right
-  top: -#{rem-calc(31)}
-  right: rem-calc(5)
-  cursor: pointer
+  #back-to-top
+    background: url("back_top.png") no-repeat transparent
+    width: 61px
+    height: 70px
+    position: absolute
+    line-height: 70px
+    vertical-align: text-top
+    display: inline-block
+    float: right
+    top: -#{rem-calc(31)}
+    right: rem-calc(5)
+    cursor: pointer
+
+  #footer-separator
+    padding-bottom: rem-calc(20)
+    .separator-line
+      background: url("sep-center.png") repeat-x
+      height: rem-calc(15)
+      top: rem-calc(3)
+
+
+  #footer-menu
+    dd
+      a
+        border-right: 1px #cacaca solid
+        line-height: 5px
+        height: 14px
+        font-weight: 300
+        display: block
+
+  #developed
+    .image-link
+      float: left
+      padding-right: rem-calc(15)
+
+      img
+        opacity: 0.8
+
+        @include single-transition(opacity, 150ms)
+
+      &:hover
+        img
+          opacity: 1
+
+    p
+      font-size: rem-calc(13)
+      a
+        color: inherit
+        text-decoration: underline
+
+        &:hover
+          color: #d0005d
+          text-decoration: none
+
+        &#vs-site-info
+          display: block
+
+
+
