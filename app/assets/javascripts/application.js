@@ -16,3 +16,12 @@
 //= require_tree .
 
 $(function(){ $(document).foundation(); });
+
+
+$(document).ready(function(){
+    $('#back-to-top').click(function () {
+        $("body").animate({ scrollTop: 0 }, 1000);
+        //$("body").effect("bounce", { direction:'up', times:4, distance:31 }, 450);
+        return false;
+    });
+});
