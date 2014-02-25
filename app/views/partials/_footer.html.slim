@@ -2,28 +2,29 @@
   .row
     .columns.large-4
       h3.heart-title
+        = image_tag('small-heart.png')
         |Два серця
       p
         |— це активно розвинута агенція, яка успішно займається підготовкою та організацією різноманітних свят, заходів, вечірок, ювілеїв та інших урочистих подій.
     .columns.large-4
       h3.heart-title
+        = image_tag('small-heart.png')
         |Соціальні мережі
-      = link_to('f', '#')
-      = link_to('f', '#')
-      = link_to('f', '#')
-      = link_to('f', '#')
+      = link_to('vk', '#', class: 'social-link')
+      = link_to('f', '#', class: 'social-link')
+      = link_to('f', '#', class: 'social-link')
+      = link_to('t', '#', class: 'social-link')
 
-    .columns.large-4
+    #footer-contact.columns.large-4
       h3.heart-title
+        = image_tag('small-heart.png')
         |Контакти
       p
         span#address
           |м. Львів, вул. Січових Стрільців, 8
 
-        span#phone
-          |+38 (067) 672 68 30
+        = link_to( '+38 (067) 672 68 30', 'tel:+38 (067) 672 68 30', id: 'phone' )
 
-        span#email
-          |info@wed.in.ua
+        = link_to('info@wed.in.ua', 'mailto:info@wed.in.ua', id: 'email')
 
-        = link_to( 'детальніше', '#' )
+        = link_to( 'детальніше', '#', id: 'contact-link' )

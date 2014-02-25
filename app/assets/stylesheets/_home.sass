@@ -21,7 +21,7 @@ p
   font-size: rem-calc(24)
 
   img
-    float: left
+    //float: left
     margin-right: 15px
 
 
@@ -66,19 +66,76 @@ p
       z-index: 100
 
   #about-section
+    padding-bottom: rem-calc(90)
+
     p
       //font-size: rem-calc(15)
       line-height: rem-calc(21)
+
+
+  #about-video-section
+    -webkit-box-shadow: inset 1px 1px 2px rgba(0,0,0,.3)
+    -moz-box-shadow: inset 1px 1px 2px rgba(0,0,0,.3)
+    box-shadow: inset 1px 1px 2px rgba(0,0,0,.3)
+    background: url("video_bg.png") repeat transparent
+    padding-bottom: rem-calc(30)
+    padding-top: rem-calc(30)
+
+    #about-video-text
+      padding-top: rem-calc(15)
+
+      p
+        font-size: rem-calc(18)
+        line-height: rem-calc(24)
+        margin-top: rem-calc(30)
+
+
+
 
   #home-portfolio-section
     p
       font-style: italic
       font-size: rem-calc(13)
 
+    h4
+      color: #d0005d
+      padding-bottom: 10px
+      text-shadow: rgba(255, 255, 255, 0.7) 1px 1px
+      font-size: rem-calc(18)
+      line-height: rem-calc(27)
+
   #home-comments-section
     p
       font-style: italic
       font-size: rem-calc(13)
+
+    .item
+      padding-top: rem-calc(60)
+      height: rem-calc(280)
+
+      p
+        font-weight: 400
+
+      .comment-author
+        text-align: right
+        color: #a28b5d
+        font-size: 17px
+        font-style: italic
+        font-weight: 400
+        display: block
+
+
+      img
+        float: left
+        -webkit-border-radius: 100px
+        -moz-border-radius: 100px
+        border-radius: 100px
+        background-color: #f6f6f6
+        -webkit-box-shadow: 6px 10px 22px rgba(2,2,2,.22)
+        -moz-box-shadow: 6px 10px 22px rgba(2,2,2,.22)
+        box-shadow: 6px 10px 22px rgba(2,2,2,.22)
+        margin-right: 15px
+        //background: url("hear_sign_img.png") no-repeat 0px 0px
 
 #separator-bottom
   padding-bottom: 30px

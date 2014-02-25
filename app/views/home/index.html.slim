@@ -30,11 +30,11 @@
 
       #about-video-section.columns.large-12
         .row
-          .columns.large-8
+          #about-video-frame.columns.large-7
             - image_tag( 'http://placehold.it/800x400&text=video' )
-            iframe width="420" height="315" src="//www.youtube.com/embed/S_uAqqZNSc8?controls=2&showinfo=0" frameborder="0" allowfullscreen=""
-
-          .columns.large-4
+            //iframe width="420" height="315" src="//www.youtube.com/embed/S_uAqqZNSc8?controls=2&showinfo=0" frameborder="0" allowfullscreen=""
+            iframe class="main-video-frame" src="http://player.vimeo.com/video/63646890?title=0&amp;byline=0&amp;portrait=0&amp;color=ff0179" width="640" height="360" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""
+          #about-video-text.columns.large-5
             h1
               |Два серця
             p
@@ -46,8 +46,7 @@
       #home-portfolio-section.columns.large-12
         .row
           .columns.large-12
-            h3.heart-title
-              |Наші роботи
+            = section_title('Наші роботи', link: '#')
           .columns.large-3
             h4
               = link_to( 'Виступ групи "Паранормальних"', '#' )
@@ -83,20 +82,7 @@
       #home-comments-section.columns.large-12
         .row
           .columns.large-12
-            .section-title
-              .row
-                .flower-left.columns.large-1
-                  = image_tag('flower-left.png')
-                .section-title-line.columns.large-3
-
-                .columns.large-4
-                  h3.heart-title
-                    |Відгуки про нас
-
-                .section-title-line.columns.large-3
-
-                .flower-right.columns.large-1
-                                  = image_tag('flower-right.png', class: 'right')
+            = section_title('Відгуки про нас', link: '#')
 
             .item.columns.large-6
               .row
@@ -109,7 +95,7 @@
                   #comment-text
                     p
                       |Організація весілля - дуже відповідальна робота, яка вимагає величезного терпіння, уважності і перевірених людей. Хочетcя, що б все було бездоганно. У мене в підсумку по-моєму все так і вийшло :) ...
-                  #comment-author
+                  .comment-author
                     span
                       |Наречений та Наречена 2013
 
@@ -125,7 +111,7 @@
                   #comment-text
                     p
                       |Організація весілля - дуже відповідальна робота, яка вимагає величезного терпіння, уважності і перевірених людей. Хочетcя, що б все було бездоганно. У мене в підсумку по-моєму все так і вийшло :) ...
-                  #comment-author
+                  .comment-author
                     span
                       |Наречений та Наречена 2013
 
@@ -141,7 +127,7 @@
                   #comment-text
                     p
                       |Організація весілля - дуже відповідальна робота, яка вимагає величезного терпіння, уважності і перевірених людей. Хочетcя, що б все було бездоганно. У мене в підсумку по-моєму все так і вийшло :) ...
-                  #comment-author
+                  .comment-author
                     span
                       |Наречений та Наречена 2013
 
@@ -157,7 +143,7 @@
                   #comment-text
                     p
                       |Організація весілля - дуже відповідальна робота, яка вимагає величезного терпіння, уважності і перевірених людей. Хочетcя, що б все було бездоганно. У мене в підсумку по-моєму все так і вийшло :) ...
-                  #comment-author
+                  .comment-author
                     span
                       |Наречений та Наречена 2013
 

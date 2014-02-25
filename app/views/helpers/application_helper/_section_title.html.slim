@@ -1,0 +1,15 @@
+.section-title
+  #info style="display:none"
+    = link.inspect
+  .row
+    .flower-left.columns.large-1
+      = image_tag('flower-left.png')
+    .section-title-line.columns.large-3
+
+    .columns.large-4
+      = heart_title( 'Відгуки про нас', tag: 'h3', link: '#' )
+
+    .section-title-line.columns.large-3
+
+    .flower-right.columns.large-1
+      = image_tag('flower-right.png', class: 'right')
