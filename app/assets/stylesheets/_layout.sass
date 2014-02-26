@@ -150,23 +150,32 @@ body:before
       height: rem-calc(15)
       top: rem-calc(3)
 
+  #copyright
+    p
+      color: #bababa
+
 
   #footer-menu
     dd
+      margin-left: 0
+
       a
         border-right: 1px #cacaca solid
         line-height: 5px
         height: 14px
         font-weight: 300
         display: block
+        text-transform: uppercase
+        color: #bababa
 
   #developed
     .image-link
       float: left
-      padding-right: rem-calc(15)
+      padding-right: rem-calc(10)
 
       img
         opacity: 0.8
+        width: rem-calc(32)
 
         @include single-transition(opacity, 150ms)
 
@@ -176,6 +185,7 @@ body:before
 
     p
       font-size: rem-calc(13)
+      color: #bababa
       a
         color: inherit
         text-decoration: underline

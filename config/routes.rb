@@ -1,5 +1,6 @@
 TwoHeartsNew::Application.routes.draw do
-  get "about/index"
+  get "contact", to: 'contact#index'
+  get "about", to: 'about#index'
   mount Ckeditor::Engine => '/ckeditor'
   mount RailsAdmin::Engine => '/admin', :as => 'rails_admin'
   devise_for :users
