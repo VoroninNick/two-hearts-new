@@ -14,23 +14,15 @@ html lang="en"
   	| <style type="text/css">.page-content {display:table;height:100%}</style>
   /[endif]
 
-body.application-layout
-
+body
 
   #content-wrapper
     = render :partial => "partials/header"
     = render :partial => "partials/menu"
-
-    #wrap-bg.clearfix
-      #wrap-bg-top
-        #wrap.row
-
-          = yield
-
-
+    = yield
 
 
 
   = render partial: "partials/footer"
 
-= javascript_include_tag "application"
+  = javascript_include_tag "application"

@@ -1,2 +1,24 @@
-h1 Contact#index
-p Find me in app/views/contact/index.html.slim
+#contact-page.relative
+  .row
+    .page-title.columns.large-12
+      h2
+        |Контакти «Двох сердець»
+
+
+    #contact-section.columns.large-12
+      #phone
+        span#label
+          |моб.:
+        span#value
+          |+38 (067) 672-68-30
+
+      #address
+        |м. Львів, вул, Січових Стрільців, 8
+
+      #email
+        = link_to( 'info@wed.in.ua', 'mailto:info@wed.in.ua' )
+
+
+
+
+    #map-section.columns.large-12
