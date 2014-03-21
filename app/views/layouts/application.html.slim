@@ -10,6 +10,9 @@ html lang="en"
   = javascript_include_tag "vendor/modernizr"
   = csrf_meta_tag
 
+  / temp. in future will be moved in another place
+  = javascript_include_tag "https://maps.googleapis.com/maps/api/js?sensor=false"
+
   /[if !IE 7]
   	| <style type="text/css">.page-content {display:table;height:100%}</style>
   /[endif]

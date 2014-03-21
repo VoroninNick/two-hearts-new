@@ -9,7 +9,7 @@ module ApplicationHelper
     return image_tag("http://placehold.it/#{width}x#{height}&text=#{text}")
   end
 
-  def heart_title(title, tag = 'h3', link)
+  def heart_title(title, tag = 'h3', link = false)
     #content_tag tag, class: 'heart_title' do
     #  if link
     #    image_tag('small-heart.png') + link_to(title, link)
