@@ -1,4 +1,5 @@
 #header
+
   .row
     nav#top-bar class="top-bar" data-topbar=""
       ul.title-area
@@ -10,13 +11,13 @@
 
       section.top-bar-section
         ul.right
-          li
-            =link_to "Агенція", 'about', class: is_active?('about')
-          li
-            =link_to "Наші роботи", '#', class: is_active?('about')
-          li
-            =link_to "Відгуки", '#', class: is_active?('about')
-          li
-            =link_to "Послуги", '#', class: is_active?('about')
-          li
-            =link_to "Контакти", '#', class: is_active?('about')
+          li class= is_active?(about_path)
+            =link_to "Агенція", about_path
+          li class= is_active?(portfolio_path)
+            =link_to "Наші роботи", portfolio_path
+          li class= is_active?(comments_path)
+            =link_to "Відгуки", comments_path
+          li class= is_active?(services_path)
+            =link_to "Послуги", services_path
+          li class= is_active?(contact_path)
+            =link_to "Контакти", contact_path

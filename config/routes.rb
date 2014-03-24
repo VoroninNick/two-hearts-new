@@ -1,9 +1,14 @@
 TwoHeartsNew::Application.routes.draw do
-  get "contact", to: 'contact#index'
-  get "about", to: 'about#index'
+
   mount Ckeditor::Engine => '/ckeditor'
   mount RailsAdmin::Engine => '/admin', :as => 'rails_admin'
   devise_for :users
+
+  get "services", to: 'services#index', as: :services
+  get "comments", to: 'comments#index', as: :comments
+  get "portfolio", to: 'portfolio#index', as: :portfolio
+  get "contact", to: 'contact#index', as: :contact
+  get "about", to: 'about#index', as: :about
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

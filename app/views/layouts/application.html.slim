@@ -21,30 +21,40 @@ body.application-layout
 
 
   #content-wrapper
+    #top-bg
+    #inner-page-bg
     = render :partial => "partials/header"
     = render :partial => "partials/menu"
 
     #wrap-bg
       #wrap-bg-top
-        #wrap.row
 
-          = yield
+      #wrap.row
+
+        = yield
 
 
 
-          #separator-bottom.columns.large-12
-                  .row
-                    .columns.large-1
-                      = image_tag('bottom_left.png')
-                    .bottom-separator-line.columns.large-4
+        #separator-bottom.columns.large-12
+                .row
+                  .columns.large-1
+                    = image_tag('bottom_left.png')
+                  .bottom-separator-line.columns.large-4
 
-                    #small-heart.columns.large-2
-                      = image_tag( 'small-heart.png' )
+                  #small-heart.columns.large-2
+                    = image_tag( 'small-heart.png' )
 
-                    .bottom-separator-line.columns.large-4
+                  .bottom-separator-line.columns.large-4
 
-                    .columns.large-1
-                      = image_tag('bottom_right.png')
+                  .columns.large-1
+                    = image_tag('bottom_right.png')
+
+
+      #wrap-bg-bottom
+
+      .clearfix
+
+    .clearfix
 
 
   = render partial: "partials/footer"

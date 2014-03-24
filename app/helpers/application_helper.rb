@@ -1,6 +1,10 @@
 module ApplicationHelper
   def is_active?(page_name)
-    if params[:action] == page_name
+    #if params[:controller_name] == page_name
+    #  "active"
+    #end
+
+    if current_page?(page_name)
       "active"
     end
   end
