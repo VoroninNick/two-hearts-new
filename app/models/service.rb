@@ -14,9 +14,9 @@ class Service < ActiveRecord::Base
 
   # Paperclip image attachments
   has_attached_file :avatar, :styles      => { :thumb => '150x150>', :service_main => '755x321#' },
-                    :url         => '/assets/service/:id/:style/:basename.:extension',
-                    :path        => ':rails_root/public/assets/service/:id/:style/:basename.:extension',
-                    :default_url => "/images/:style/mising.png"
+                             :url         => '/assets/service/:id/:style/:basename.:extension',
+                             :path        => ':rails_root/public/assets/service/:id/:style/:basename.:extension',
+                             :default_url => "/images/:style/mising.png"
 
   has_many :assets, :as => :assetable, :dependent => :destroy
   accepts_nested_attributes_for :assets

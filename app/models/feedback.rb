@@ -6,7 +6,7 @@ class Feedback < ActiveRecord::Base
   validates :name, presence: true
 
   has_attached_file :avatar, :styles      => { :thumb => '153x153#' },
-                    :url         => '/assets/feedback/:id/:style/:basename.:extension',
-                    :path        => ':rails_root/public/assets/feedback/:id/:style/:basename.:extension',
-                    :default_url => "/images/:style/mising.png"
+                             :url         => '/assets/feedback/:id/:style/:basename.:extension',
+                             :path        => ':rails_root/public/assets/feedback/:id/:style/:basename.:extension',
+                             :default_url => "/images/:style/mising.png"
 end
