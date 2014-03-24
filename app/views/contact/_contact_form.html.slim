@@ -1,19 +1,32 @@
-#contact-form-section
+#contact-form-section.section
   .columns.large-12
     = heart_title('Пишіть нам')
 
-  .columns.large-6
-    input type="text"
-    input type="text"
-    input type="text"
+  form
 
-  .columns.large-6
-    textarea
+    .columns.large-6
+      .field
+        input data-validation-error-msg="Введіть будь-ласка Ваше імя!" data-validation-help=" " data-validation="validate_min_length length2" id="contact_name" name="contact[name]" placeholder="Микола Воронін" size="30" type="text"
+        label for="name" Ваше ім’я
 
-  .columns
-    #cont-bt-wrapper
-        .branded-bt
-          .bt-start
-          .bt-center
-            input.submit name="commit" type="submit" value="НАДІСЛАТИ"
-          div.bt-end
+      .field
+        input data-validation-error-msg="Введіть будь-ласка Ваш номер телефону!" data-validation-help=" " data-validation="validate_phone" id="contact_phone" name="contact[phone]" placeholder="+38 067 675 81 18" size="30" type="text"
+        label for="name" Ваш контактний телефон
+
+
+      .field
+        input data-validation-error-msg="Введіть будь-ласка Вашу поштову скриньку!" data-validation-help=" " data-validation="validate_email" id="contact_email" name="contact[email]" placeholder="voronin.nick@gmail.com" size="30" style="" type="text"
+        label for="name" Ваша ел. скринька
+
+    .columns.large-6
+      .field
+        textarea cols="40" data-validation-error-msg="Введіть будь-ласка Ваше повідомлення!" data-validation-help=" " data-validation="required" id="contact_body" name="contact[body]" placeholder="У своїй роботі ми застосовуємо сучасне обладнання та високоякісні матеріали. Прогресивні методи виробництва та висока кваліфікація наших працівників дозволяють добиватися найвищих експлуатаційних характеристик всіх видів продукції підприємства." rows="20" class="error"
+        label for="contact_body" Ваше повідомлення
+
+    .columns
+      .branded-button-wrapper.right
+          .branded-button
+            .branded-button-start
+            .branded-button-center
+              input.submit name="commit" type="submit" value="НАДІСЛАТИ"
+            .branded-button-end

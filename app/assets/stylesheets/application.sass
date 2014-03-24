@@ -24,14 +24,37 @@
       z-index: 100
 
 
+  #separator-bottom
+    margin-top: 120px
+
+
+
+
+.section
+  margin-top: 30px
+
+
+.page-title
+  height: 100px
+  line-height: 100px
+
+  h2
+    height: inherit
+    line-height: inherit
+    font-weight: 100
 
 
 
 #contact-page
-  //.page-title
+
 
 
   #contact-section
+    margin-top: 50px
+
+    .field
+      margin: 0px 0px 9px 0px
+
     #phone
       text-align: center
 
@@ -58,12 +81,21 @@
     #email
       text-align: center
 
+      a
+        text-shadow: 0 1px 0 #fff
+        color: #cf005d
+        text-decoration: none
+        font-size: 24px
+
   #map-section
     #map
       height: 490px
 
 
   #contact-form-section
+    .field
+      margin: 0px 0px 9px 0px
+
     input
       height: 50px
 
@@ -84,8 +116,41 @@
       font-family: 'Georgia', sans-serif
       outline: 0
       border: 0
+      padding: 1px 10px
+      margin: 0
+
+
+      &.submit
+        -moz-border-radius: 0 0 0 0 / 0 0 0 0
+        -webkit-border-radius: 0 0 0 0 / 0 0 0 0
+        border-radius: 0 0 0 0 / 0 0 0 0
+        -moz-background-clip: padding
+        -webkit-background-clip: padding-box
+        background-clip: padding-box
+        background-color: rgba(0,0,0,0)
+        -moz-box-shadow: inset 0 0 0 rgba(0,0,0,0)
+        -webkit-box-shadow: inset 0 0 0 rgba(0,0,0,0)
+        box-shadow: inset 0 0 0 rgba(0,0,0,0)
+        color: #ffffff
+        font-size: 24px
+        font-style: italic
+        font-weight: lighter !important
+        font-family: 'Georgia', sans-serif
+        outline: 0
+        border: 0
+        margin-top: 14px
+        cursor: pointer
+
+
+
+    label
+      color: #a2a4a9
+      font-family: 'Open Sans', sans-serif
+      font-weight: 300
+      font-size: 13px
       padding-left: 10px
-      padding-right: 10px
+      display: inline
+      line-height: 18px
 
 
     textarea
@@ -110,6 +175,46 @@
       border: 0
       padding-left: 10px
       padding-right: 10px
+
+
+    .branded-button-wrapper
+      .branded-button
+        float: left
+        height: 62px
+        cursor: pointer
+
+        .branded-button-start
+          background: url('branded-bt-start.png') no-repeat transparent
+          height: 62px
+          float: left
+          width: 54px
+
+        .branded-button-center
+          background: url('branded-bt-center.png') repeat-x transparent
+          height: 62px
+          float: left
+
+        .branded-button-end
+          background: url('branded-bt-end.png') no-repeat transparent
+          height: 62px
+          float: left
+          width: 62px
+
+
+      // form validation
+    .jquery_form_error_message
+      color: rgb(208, 0, 93)
+      font-family: 'Open Sans', sans-serif
+      font-weight: 300
+      font-style: italic
+      font-size: 12px
+      padding-left: 0px
+      display: block
+      float: right
+      margin-top: 0px
+      line-height: 18px
+
+
 
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files

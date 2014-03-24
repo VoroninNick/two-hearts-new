@@ -1,32 +1,37 @@
 #contact-page.relative
-  .row
-    .page-title.columns.large-12
-      h2
-        |Контакти «Двох сердець»
+  .page-title.columns.large-12
+    h2
+      |Контакти «Двох сердець»
 
 
-    #contact-section.columns.large-12
-      #phone
+  #contact-section.section
+    .columns.large-12
+      #phone.field
         span#label
           |моб.:
         span#value
           |+38 (067) 672-68-30
 
-      #address
+      #address.field
         |м. Львів, вул, Січових Стрільців, 8
 
-      #email
+      #email.field
         = link_to( 'info@wed.in.ua', 'mailto:info@wed.in.ua' )
 
+    .clearfix
 
 
 
-    #map-section
-      .columns.large-12
-        = heart_title('Ми на Гугл мапі')
 
-      .columns.large-12
-        #map
+  #map-section.section
+    .columns.large-12
+      = heart_title('Ми на Гугл мапі')
+
+    .columns.large-12
+      #map
 
 
-    = render partial: 'contact/contact_form'
+    .clearfix
+
+
+  = render partial: 'contact/contact_form'

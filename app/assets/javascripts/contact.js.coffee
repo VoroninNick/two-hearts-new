@@ -23,3 +23,21 @@ $(document).ready ->
       title: "Wood Technic"
       #icon: '/assets/logo-for-map.png'
     )
+
+
+
+  $('#contact-page #contact-form-section form').each (index, element) ->
+
+
+
+    validationSettings =
+      errorMessagePosition: "element"
+      borderColorOnError: ""
+
+
+    #alert('Valid!');
+    #$("#new_order").submit();
+    $("#contact-page #contact-form-section form").submit(->
+      return true  if $(this).validate(false, validationSettings)
+      false
+    ).validateOnBlur(false, validationSettings).showHelpOnFocus()
