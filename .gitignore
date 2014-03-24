@@ -23,3 +23,5 @@
 /.idea
 
 /plan.txt
+
+/config/deploy/*
