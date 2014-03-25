@@ -59,4 +59,4 @@ gem 'devise'
 
 gem 'better_errors'
 
-gem 'paperclip'
+gem 'paperclip', '~> 3.5.3'
