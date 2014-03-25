@@ -5,6 +5,9 @@ class Team < ActiveRecord::Base
       :styles => {
           admin:      '65x65#',
           thumb:      '100x100#',
-          show:       '141x177#'
+          show:       '141x177#',
+          about:      '160x200#'
       }
+
+
 end
