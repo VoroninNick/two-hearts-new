@@ -104,11 +104,11 @@
       - if index % 2 == 0 && index > 0
         .clearfix style="margin-bottom:30px"
 
-      .member.columns.large-6
-        .photo.left
+      .member
+        .photo.columns.large-2.left
           = image_tag(member.avatar.url(:show), :class => 'about-img', :style => 'float: left;', :width => '125')
 
-        .description.left
+        .description.columns.large-4.left
           h5.name
             = member.full_name
 
