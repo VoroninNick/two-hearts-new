@@ -64,6 +64,9 @@
               |Професійні свята
 
 
+    .clearfix
+
+
 
 
   #why-we-section.section
@@ -71,3 +74,41 @@
       p#why ЧОМУ
       p#we МИ
       p#question-mark ?
+
+    #we-sell
+      p
+        |Ми не продаємо повітря, всі послуги власні. Працюємо командою на конкретний результат!
+
+    .clearfix
+
+
+  #our-team-section.section
+    .columns.large-12
+      h4
+        |НАША КОМАНДА
+
+    .columns.large-6
+
+      p
+        |Ми – закохані у свою роботу професіонали. Організовуючи ваше свято, ми переймаємося кожною дрібничкою і хвилюємося за настрій гостей. Кожен з нас відповідає за конкретний спільний результат – дивовижне свято для вас.
+
+    .columns.large-6
+      = image_tag('wed2.jpg')
+
+
+    .clearfix
+
+  #members-list-section.section
+    - @members.each do |member|
+      .member
+        .photo.columns.large-2.left
+          = image_tag(member.avatar.url(:show), :class => 'about-img', :style => 'float: left;', :width => '125')
+        .description.columns.large-4.left
+          h5.name
+            = member.full_name
+
+          i.status
+            = member.position
+
+          p.functions
+            = member.short_descr
