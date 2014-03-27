@@ -372,6 +372,67 @@
       margin-bottom: 0
 
 
+#services-page
+  #catalog-list
+    ul
+      >li
+        list-style: none
+        line-height: 35px
+        font-weight: lighter
+        color: #646464
+        font-family: 'Georgia', sans-serif
+        text-decoration: none
+        font-size: 18px
+        border-top: 1px dashed #dcdadb
+        padding-top: 10px
+        padding-bottom: 10px
+        overflow: hidden
+        cursor: pointer
+        font-size: 18px
+
+        a, span
+          font-size: inherit
+
+        & > span
+          position: relative
+          left: -35px
+          -webkit-transition: 0.75s ease-out all
+          -moz-transition: 0.75s ease-out all
+          -ms-transition: 0.75s ease-out all
+          -o-transition: 0.75s ease-out all
+          transition: 0.75s ease-out all
+          cursor: pointer
+
+        &:hover > span
+          left: 0
+
+
+        &:last-child
+          border-bottom: 1px dashed #dcdadb
+
+
+        a
+          &, &:visited
+            text-decoration: none
+            font-weight: lighter
+            color: #646464
+            -webkit-transition: 0.45s ease-out all
+            -moz-transition: 0.45s ease-out all
+            -ms-transition: 0.45s ease-out all
+            -o-transition: 0.45s ease-out all
+            transition: 0.45s ease-out all
+
+        &:hover a
+          color: #cf005d
+          border-bottom: 1px solid rgba(207, 0, 93, .75)
+
+
+    ul.sub-categories-list
+      display: none
+
+
+
+
 
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&subset=latin,cyrillic-ext,greek-ext,greek,vietnamese,latin-ext,cyrillic)
 

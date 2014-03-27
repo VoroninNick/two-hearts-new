@@ -6,6 +6,8 @@ module ApplicationHelper
 
     if current_page?(page_name)
       "active"
+    else
+      ''
     end
   end
 
@@ -27,7 +29,7 @@ module ApplicationHelper
     render partial: 'helpers/application_helper/heart_title', locals: { title: title, tag: tag, link: link }
   end
 
-  def section_title(title, tag = 'h3', link)
+  def section_title(title, tag = 'h3', link = false)
     render inline: link.inspect
     #.section-title
     #.row

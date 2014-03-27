@@ -13,11 +13,11 @@
         ul.right
           li class= is_active?(about_path)
             =link_to "Агенція", about_path
-          li class= is_active?(portfolio_path)
+          li class= ( is_active?(portfolio_path) + ' portfolio' )
             =link_to "Наші роботи", portfolio_path
           li class= is_active?(comments_path)
             =link_to "Відгуки", comments_path
           li class= is_active?(services_path)
             =link_to "Послуги", services_path
-          li class= is_active?(contact_path)
+          li class= ( is_active?(contact_path) + ' contact' )
             =link_to "Контакти", contact_path

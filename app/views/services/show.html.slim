@@ -1,0 +1,19 @@
+#services-page.relative
+  .page-title.columns.large-12
+    h2
+      |ПОСЛУГИ
+
+
+  = render partial: 'services/catalog_list'
+
+
+  - if @service
+      #service-content
+        .columns.large-8
+          h2
+            = @service.name
+
+          - if @service.avatar.present?
+            = image_tag(@service.avatar.url(:main), :style => "margin-bottom: 50px;", :class => 'avatar')
+
+          = raw @service.description

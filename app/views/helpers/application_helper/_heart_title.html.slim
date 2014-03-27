@@ -1,12 +1,5 @@
 //= content_tag tag, title
-= content_tag( 'h3', title, class: 'heart-title' )
-  #info style="display:none"
-    #title
-      = title.inspect
-    #tag
-      = tag.inspect
-    #link
-      = link.inspect
+= content_tag( tag, title, class: 'heart-title' )
   = image_tag('small-heart.png')
 
   - if link

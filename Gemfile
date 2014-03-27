@@ -57,6 +57,7 @@ gem 'ckeditor'
 
 gem 'devise'
 
+gem 'binding_of_caller'
 gem 'better_errors'
 
 gem 'paperclip', '~> 3.5.3'

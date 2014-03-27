@@ -5,6 +5,7 @@ TwoHeartsNew::Application.routes.draw do
   devise_for :users
 
   get "services", to: 'services#index', as: :services
+  get 'services/:service', to: 'services#show', as: :service_item
   get "comments", to: 'comments#index', as: :comments
   get "portfolio", to: 'portfolio#index', as: :portfolio
   get "contact", to: 'contact#index', as: :contact
