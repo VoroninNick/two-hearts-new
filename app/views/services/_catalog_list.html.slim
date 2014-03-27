@@ -3,10 +3,10 @@
         - @service_categories.each do |c|
           li
             - if c.sub_categories && c.sub_categories.count > 0
-              = heart_title(c.name, 'span')
+              = heart_title(c.name+ '&nbsp;+', 'span')
               ul.sub-categories-list
-              - c.sub_categories.each do |sub_category|
-                li
-                  = heart_title( sub_category.name, 'span', service_item_path( sub_category.service.slug) )
+                - c.sub_categories.each do |sub_category|
+                  li
+                    = heart_title( sub_category.name, 'span', service_item_path( sub_category.service.slug) )
             - else
               = heart_title(c.name, 'span', service_item_path( c.service.slug ) )
